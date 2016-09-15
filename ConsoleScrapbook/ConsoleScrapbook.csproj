@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE932FA1-A38B-4296-98BD-1408A7D094F8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsoleScrapbook</RootNamespace>
+    <AssemblyName>ConsoleScrapbook</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.2.6.0.12054\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TechTalk.SpecFlow, Version=1.9.0.77, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusGossip\BusGossip.cs" />
+    <Compile Include="BusGossip\SimpleBusGossip.cs" />
+    <Compile Include="FormBuilderAPI2\Controllers\Controller.cs" />
+    <Compile Include="FormBuilderAPI2\Factories\Factory.cs" />
+    <Compile Include="FormBuilderAPI2\Repositories\MultiRepository.cs" />
+    <Compile Include="FormBuilderAPI2\Repositories\Repository.cs" />
+    <Compile Include="FormBuilderAPI2\Repositories\SingleRepository.cs" />
+    <Compile Include="FormBuilderAPI2\Models\Model.cs" />
+    <Compile Include="FormBuilderAPI\DummyAPI.cs" />
+    <Compile Include="FormBuilderAPI\Factories\Modules\CounterSigFactory.cs" />
+    <Compile Include="FormBuilderAPI\Factories\Modules\EqualityMonFactory.cs" />
+    <Compile Include="FormBuilderAPI\Factories\Modules\FTPDecFactory.cs" />
+    <Compile Include="FormBuilderAPI\ViewModels\IViewModel.cs" />
+    <Compile Include="FormBuilderAPI\Factories\Modules\PersonalDetailsFactory.cs" />
+    <Compile Include="FormBuilderAPI\Factories\Modules\PhotoCertFactory.cs" />
+    <Compile Include="FormBuilderAPI\Factories\Modules\PreviousRegFactory.cs" />
+    <Compile Include="FormBuilderAPI\Factories\Modules\QualificationFactory.cs" />
+    <Compile Include="FormBuilderAPI\Factories\Modules\SupervisorFactory.cs" />
+    <Compile Include="FormBuilderAPI\Factories\Modules\TrainingFactory.cs" />
+    <Compile Include="FormBuilderAPI\Factories\Modules\TutorFactory.cs" />
+    <Compile Include="FormBuilderAPI\Factories\Modules\WorkExpFactory.cs" />
+    <Compile Include="FormBuilderAPI\Factories\NonRegFactory.cs" />
+    <Compile Include="FormBuilderAPI\Factories\PreregFactory.cs" />
+    <Compile Include="FormBuilderAPI\Factories\TechnicianFactory.cs" />
+    <Compile Include="FormBuilderAPI\Forms\BaseForm.cs" />
+    <Compile Include="FormBuilderAPI\Forms\NonRegForm.cs" />
+    <Compile Include="FormBuilderAPI\Forms\PreregForm.cs" />
+    <Compile Include="FormBuilderAPI\Forms\TechnicianForm.cs" />
+    <Compile Include="FormBuilderAPI\Infrastructure\FormAppDbContext.cs" />
+    <Compile Include="FormBuilderAPI\Repositories\IRepository.cs" />
+    <Compile Include="FormBuilderAPI\Modules\CounterSig.cs" />
+    <Compile Include="FormBuilderAPI\Modules\EqualityMon.cs" />
+    <Compile Include="FormBuilderAPI\Modules\FTPDec.cs" />
+    <Compile Include="FormBuilderAPI\Modules\PersonalDetails.cs" />
+    <Compile Include="FormBuilderAPI\Modules\PhotoCert.cs" />
+    <Compile Include="FormBuilderAPI\Modules\PreviousReg.cs" />
+    <Compile Include="FormBuilderAPI\Modules\Qualification.cs" />
+    <Compile Include="FormBuilderAPI\Modules\Supervisor.cs" />
+    <Compile Include="FormBuilderAPI\Modules\Training.cs" />
+    <Compile Include="FormBuilderAPI\Modules\Tutor.cs" />
+    <Compile Include="FormBuilderAPI\Modules\WorkExp.cs" />
+    <Compile Include="FormBuilderAPI\Repositories\TechnicianRepository.cs" />
+    <Compile Include="FormBuilderAPI\ViewModels\CounterSigViewModel.cs" />
+    <Compile Include="FormBuilderAPI\ViewModels\EqualityMonViewModel.cs" />
+    <Compile Include="FormBuilderAPI\ViewModels\FTPDecViewModel.cs" />
+    <Compile Include="FormBuilderAPI\ViewModels\PersonalDetailsViewModel.cs" />
+    <Compile Include="FormBuilderAPI\ViewModels\PhotoCertViewModel.cs" />
+    <Compile Include="FormBuilderAPI\ViewModels\PreviousRegViewModel.cs" />
+    <Compile Include="FormBuilderAPI\ViewModels\QualificationViewModel.cs" />
+    <Compile Include="FormBuilderAPI\ViewModels\SupervisorViewModel.cs" />
+    <Compile Include="FormBuilderAPI\ViewModels\TechnicianAppViewModel.cs" />
+    <Compile Include="FormBuilderAPI\ViewModels\TrainingViewModel.cs" />
+    <Compile Include="FormBuilderAPI\ViewModels\TutorViewModel.cs" />
+    <Compile Include="FormBuilderAPI\ViewModels\WorkExpViewModel.cs" />
+    <Compile Include="HackerRank\DictionaryBuilder.cs" />
+    <Compile Include="HackerRank\StringBuilder.cs" />
+    <Compile Include="Main\Builder.cs" />
+    <Compile Include="Main\BitCounter.cs" />
+    <Compile Include="Main\Chains.cs" />
+    <Compile Include="Exceptions\MyException.cs" />
+    <Compile Include="F_R\IProductRepository.cs" />
+    <Compile Include="F_R\ProductFactory.cs" />
+    <Compile Include="F_R\IProduct.cs" />
+    <Compile Include="F_R\IProductFactory.cs" />
+    <Compile Include="F_R\Product.cs" />
+    <Compile Include="FenChess\ChessMain.cs" />
+    <Compile Include="HackerRank\DictionaryFunction.cs" />
+    <Compile Include="Main\Fibonacci.cs" />
+    <Compile Include="Main\GameOfThrees.cs" />
+    <Compile Include="Main\GarageDoor.cs" />
+    <Compile Include="Main\LeaderSorted.cs" />
+    <Compile Include="Main\Lightswitch.cs" />
+    <Compile Include="Main\LineOverlap.cs" />
+    <Compile Include="Main\Threadz.cs" />
+    <Compile Include="Main\Transpose.cs" />
+    <Compile Include="Main\WordMash.cs" />
+    <Compile Include="Mastermind\WordGuess.cs" />
+    <Compile Include="Main\NoStrings.cs" />
+    <Compile Include="Main\Palindromic.cs" />
+    <Compile Include="Main\Permutation.cs" />
+    <Compile Include="Main\Pointer.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Poker\Deck.cs" />
+    <Compile Include="Poker\Poker.cs" />
+    <Compile Include="Poker\VideoPoker.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scrap\Class1.cs" />
+    <Compile Include="Scrap\ModelPropertyMatch.cs" />
+    <Compile Include="Scrap\RefExample.cs" />
+    <Compile Include="Scrap\CodeFile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mastermind\bail.txt" />
+    <Content Include="Mastermind\enable1.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
