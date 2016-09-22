@@ -112,8 +112,12 @@
     <Compile Include="FormBuilderAPI\ViewModels\TrainingViewModel.cs" />
     <Compile Include="FormBuilderAPI\ViewModels\TutorViewModel.cs" />
     <Compile Include="FormBuilderAPI\ViewModels\WorkExpViewModel.cs" />
+    <Compile Include="HackerRank\BubbleSort.cs" />
     <Compile Include="HackerRank\DictionaryBuilder.cs" />
+    <Compile Include="HackerRank\ExceptionExample.cs" />
+    <Compile Include="HackerRank\Generics.cs" />
     <Compile Include="HackerRank\LinkedList.cs" />
+    <Compile Include="HackerRank\StackAndQueue.cs" />
     <Compile Include="HackerRank\StringBuilder.cs" />
     <Compile Include="Main\Builder.cs" />
     <Compile Include="Main\BitCounter.cs" />
