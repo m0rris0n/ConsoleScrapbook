@@ -52,11 +52,11 @@ namespace ConsoleScrapbook.HackerRank
     public class Node
     {
         public int data;
-        public Node next;
+        public Node next, left, right;
         public Node(int d)
         {
             data = d;
-            next = null;
+            next = left = right = null;
         }
 
     }

@@ -112,6 +112,7 @@
     <Compile Include="FormBuilderAPI\ViewModels\TrainingViewModel.cs" />
     <Compile Include="FormBuilderAPI\ViewModels\TutorViewModel.cs" />
     <Compile Include="FormBuilderAPI\ViewModels\WorkExpViewModel.cs" />
+    <Compile Include="HackerRank\BinarySearchTree.cs" />
     <Compile Include="HackerRank\BubbleSort.cs" />
     <Compile Include="HackerRank\DictionaryBuilder.cs" />
     <Compile Include="HackerRank\ExceptionExample.cs" />
